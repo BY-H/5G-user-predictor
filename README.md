@@ -36,6 +36,10 @@ To address the dataset's imbalance and improve prediction accuracy, we employed 
 - Random Feature Selection: Randomly select ten categorical features and perform one-hot encoding for learning.
 - Selection Based on Feature Importance: Select key features based on the feature importance from random forests and decision trees for training.
 
+### Logistic Regression (LR)
+
+- Weighted Processing: Weights were set for the target variable to address the data imbalance issue.
+
 ## Results
 
 Through the above solutions, we achieved the following experimental results:
@@ -43,10 +47,13 @@ Through the above solutions, we achieved the following experimental results:
 - Random Forest: The AUC value was improved through weighted and sampling processing, ultimately reaching 0.9077.
 - Decision Tree: The AUC value was improved through feature selection and sampling processing, ultimately reaching 0.9077.
 - Neural Network: The AUC value was improved from 0.8378 to 0.8711 through random feature selection and selection based on feature importance.
+- Logistic Regression: After data normalization and weight setting, the AUC value was 0.8515.
 
 ![image.png](./pics/p1.png)
 
 
 ## Conclusion
 
-Due to the dataset's class imbalance and mixed data types, we employed different strategies for each model. For random forests and decision trees, we tried weighted and sampling processing to address class imbalance. For neural networks, we used feature selection to reduce overfitting and improve model performance.<br />With these solutions, we were able to effectively enhance the predictive accuracy of the models and provide a viable solution for the 5G user prediction problem.
+Due to the dataset's class imbalance and mixed data types, we employed different strategies for each model. For random forests and decision trees, we tried weighted and sampling processing to address class imbalance. For neural networks, we used feature selection to reduce overfitting and improve model performance.
+
+With these solutions, we were able to effectively enhance the predictive accuracy of the models and provide a viable solution for the 5G user prediction problem.
